@@ -16,13 +16,13 @@ const Header = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const phone = "5511999999999"; // Replace with actual WhatsApp number
+    const phone = "5511999999999";
     const message = "Olá! Gostaria de saber mais sobre a Casa de Repouso.";
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-gentle ${isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-gentle' : 'bg-background'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all ${isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-md' : 'bg-white'}`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
@@ -32,19 +32,18 @@ const Header = () => {
               className="w-12 h-12 object-cover rounded-full"
             />
             <div>
-              <h1 className="text-xl font-heading font-semibold text-foreground">
+              <h1 className="text-xl font-semibold text-gray-900">
                 Casa de Repouso
               </h1>
-              <p className="text-sm text-muted-foreground italic">
+              <p className="text-sm text-gray-600 italic">
                 O Amor NUNCA Envelhece
               </p>
             </div>
           </div>
           
           <Button 
-            variant="whatsapp" 
             onClick={handleWhatsAppClick}
-            className="hidden sm:flex"
+            className="hidden sm:flex bg-green-500 text-white hover:bg-green-600"
           >
             <MessageCircle className="w-4 h-4" />
             Fale Conosco

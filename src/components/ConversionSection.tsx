@@ -1,54 +1,12 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
 import { MessageCircle, Phone, MapPin, Calendar } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import LeadForm from "./LeadForm";
 
 const ConversionSection = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    interest: "visita",
-    message: ""
-  });
-  
-  const { toast } = useToast();
-
   const handleWhatsAppClick = () => {
     const phone = "5511999999999"; // Replace with actual WhatsApp number
     const message = "Olá! Gostaria de saber mais sobre a Casa de Repouso e agendar uma visita.";
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Here you would typically send the data to your backend/CRM
-    console.log("Form submitted:", formData);
-    
-    toast({
-      title: "Mensagem enviada!",
-      description: "Em breve nossa equipe entrará em contato com você.",
-    });
-    
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      interest: "visita",
-      message: ""
-    });
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
   };
 
   return (
@@ -134,92 +92,7 @@ const ConversionSection = () => {
             
             {/* Contact Form */}
             <div className="p-8 bg-white rounded-2xl shadow-gentle border border-border">
-              <h3 className="text-2xl font-heading font-bold text-foreground mb-6">
-                Ou deixe seus dados
-              </h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <Label htmlFor="name">Nome completo *</Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                      className="mt-1"
-                    />
-                  </div>
-                  
-                  <div>
-                    <Label htmlFor="phone">Telefone *</Label>
-                    <Input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      required
-                      className="mt-1"
-                    />
-                  </div>
-                </div>
-                
-                <div>
-                  <Label htmlFor="email">E-mail</Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    className="mt-1"
-                  />
-                </div>
-                
-                <div>
-                  <Label htmlFor="interest">Interesse</Label>
-                  <select
-                    id="interest"
-                    name="interest"
-                    value={formData.interest}
-                    onChange={handleInputChange}
-                    className="mt-1 w-full px-3 py-2 border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-ring"
-                  >
-                    <option value="visita">Agendar visita</option>
-                    <option value="informacoes">Mais informações</option>
-                    <option value="preco">Consultar preços</option>
-                    <option value="urgente">Situação urgente</option>
-                  </select>
-                </div>
-                
-                <div>
-                  <Label htmlFor="message">Mensagem (opcional)</Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    placeholder="Conte-nos um pouco sobre suas necessidades..."
-                    className="mt-1"
-                    rows={4}
-                  />
-                </div>
-                
-                <Button 
-                  type="submit" 
-                  variant="hero" 
-                  size="lg" 
-                  className="w-full"
-                >
-                  Enviar Mensagem
-                </Button>
-                
-                <div className="text-xs text-muted-foreground text-center">
-                  * Campos obrigatórios. Seus dados estão seguros conosco.
-                </div>
-              </form>
+              <LeadForm />
             </div>
           </div>
         </div>

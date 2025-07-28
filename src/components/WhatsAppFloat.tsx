@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { MessageCircle, X } from "lucide-react";
+// import { trackWhatsAppClick } from "@/lib/analytics";
 
 const WhatsAppFloat = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,6 +27,7 @@ const WhatsAppFloat = () => {
   const handleWhatsAppClick = () => {
     const phone = "5511999999999"; // Replace with actual WhatsApp number
     const message = "Olá! Gostaria de saber mais sobre a Casa de Repouso.";
+    // trackWhatsAppClick();
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
