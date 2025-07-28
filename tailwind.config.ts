@@ -18,12 +18,21 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'heading': ['Playfair Display', 'serif'],
+				'body': ['Lato', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				'warm-cream': 'hsl(var(--warm-cream))',
+				'soft-peach': 'hsl(var(--soft-peach))',
+				'warm-orange': 'hsl(var(--warm-orange))',
+				'deep-purple': 'hsl(var(--deep-purple))',
+				'gentle-lavender': 'hsl(var(--gentle-lavender))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'

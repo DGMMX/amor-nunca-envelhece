@@ -1,42 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Design system for Casa de Repouso - O Amor NUNCA Envelhece */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    /* Primary brand colors - warm and welcoming */
+    --background: 46 33% 97%;  /* Soft cream #f4e8dd */
+    --foreground: 25 30% 15%;  /* Dark warm brown */
+    
+    /* Warm color palette for emotional connection */
+    --warm-cream: 46 33% 97%;
+    --soft-peach: 25 85% 88%;
+    --warm-orange: 25 85% 65%;
+    --deep-purple: 260 40% 35%;
+    --gentle-lavender: 260 25% 85%;
+    
+    /* UI semantic colors mapped to warm palette */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 25 30% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 25 30% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 25 85% 65%;  /* Warm orange */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 260 25% 85%;  /* Gentle lavender */
+    --secondary-foreground: 260 40% 35%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 46 33% 94%;  /* Lighter cream */
+    --muted-foreground: 25 20% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 260 40% 35%;  /* Deep purple */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 25 25% 88%;
+    --input: 0 0% 100%;
+    --ring: 25 85% 65%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
+    
+    /* Custom gradients for emotional appeal */
+    --gradient-warm: linear-gradient(135deg, hsl(var(--warm-orange)), hsl(var(--deep-purple)));
+    --gradient-soft: linear-gradient(180deg, hsl(var(--warm-cream)), hsl(var(--soft-peach)));
+    
+    /* Shadows for depth and warmth */
+    --shadow-warm: 0 10px 30px -5px hsl(var(--warm-orange) / 0.3);
+    --shadow-gentle: 0 4px 20px -2px hsl(var(--deep-purple) / 0.2);
+    
+    /* Smooth transitions */
+    --transition-gentle: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +120,32 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .gradient-warm {
+    background: var(--gradient-warm);
+  }
+  
+  .gradient-soft {
+    background: var(--gradient-soft);
+  }
+  
+  .shadow-warm {
+    box-shadow: var(--shadow-warm);
+  }
+  
+  .shadow-gentle {
+    box-shadow: var(--shadow-gentle);
+  }
+  
+  .transition-gentle {
+    transition: var(--transition-gentle);
   }
 }
