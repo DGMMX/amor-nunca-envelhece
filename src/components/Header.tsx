@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import logoImage from "@/assets/logo-casa-repouso.png";
+import logoImage from "@/assets/Logo_Oficial_O_Amor_Nunca_Envelhece.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,7 +16,7 @@ const Header = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const phone = "5511999999999";
+    const phone = "5511962157712";
     const message = "Olá! Gostaria de saber mais sobre a Casa de Repouso.";
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };

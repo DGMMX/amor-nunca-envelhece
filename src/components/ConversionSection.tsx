@@ -4,7 +4,7 @@ import LeadForm from "./LeadForm";
 
 const ConversionSection = () => {
   const handleWhatsAppClick = () => {
-    const phone = "5511999999999"; // Replace with actual WhatsApp number
+    const phone = "5511962157712"; // Replace with actual WhatsApp number
     const message = "Olá! Gostaria de saber mais sobre a Casa de Repouso e agendar uma visita.";
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
@@ -68,7 +68,7 @@ const ConversionSection = () => {
                   <Phone className="w-5 h-5 text-warm-orange" />
                   <div>
                     <div className="font-semibold text-foreground">Telefone</div>
-                    <div className="text-sm text-muted-foreground">(11) 99999-9999</div>
+                    <div className="text-sm text-muted-foreground">(11) 962157712</div>
                   </div>
                 </div>
                 
@@ -83,7 +83,7 @@ const ConversionSection = () => {
                 <div className="flex items-center space-x-4 p-4 bg-white/60 rounded-xl">
                   <MapPin className="w-5 h-5 text-warm-orange" />
                   <div>
-                    <div className="font-semibold text-foreground">Localização</div>
+                    <div className="font-semibold text-foreground">Rua professor Guilherme belfort Sabino - 650</div>
                     <div className="text-sm text-muted-foreground">São Paulo - SP</div>
                   </div>
                 </div>

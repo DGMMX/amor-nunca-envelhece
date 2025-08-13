@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-elderly-care.jpg";
 
 const HeroSection = () => {
   const handleWhatsAppClick = () => {
-    const phone = "5511999999999"; // Replace with actual WhatsApp number
+    const phone = "5511962157712"; // Replace with actual WhatsApp number
     const message = "Olá! Gostaria de falar com a equipe da Casa de Repouso.";
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };

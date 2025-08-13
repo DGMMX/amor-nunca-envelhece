@@ -1,15 +1,15 @@
 import { Heart, MessageCircle, Instagram, Phone, MapPin } from "lucide-react";
-import logoImage from "@/assets/logo-casa-repouso.png";
+import logoImage from "@/assets/Logo_Oficial_O_Amor_Nunca_Envelhece.png";
 
 const Footer = () => {
   const handleWhatsAppClick = () => {
-    const phone = "5511999999999"; // Replace with actual WhatsApp number
+    const phone = "5511962157712"; // Replace with actual WhatsApp number
     const message = "Olá! Vim através do site da Casa de Repouso.";
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   const handleInstagramClick = () => {
-    window.open('https://instagram.com/casa.de.repouso', '_blank');
+    window.open('https://www.instagram.com/o_amor_nunca_envelhece', '_blank');
   };
 
   return (
@@ -68,7 +68,7 @@ const Footer = () => {
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-warm-orange" />
                   <div>
-                    <div className="font-medium">(11) 99999-9999</div>
+                    <div className="font-medium">(11) 962157712</div>
                     <div className="text-sm text-white/70">WhatsApp e telefone</div>
                   </div>
                 </div>
@@ -76,7 +76,7 @@ const Footer = () => {
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-warm-orange" />
                   <div>
-                    <div className="font-medium">São Paulo - SP</div>
+                    <div className="font-medium">Rua professor Guilherme belfort Sabino - 650</div>
                     <div className="text-sm text-white/70">Localização privilegiada</div>
                   </div>
                 </div>
@@ -84,7 +84,7 @@ const Footer = () => {
                 <div className="flex items-center space-x-3">
                   <Instagram className="w-5 h-5 text-warm-orange" />
                   <div>
-                    <div className="font-medium">@casa.de.repouso</div>
+                    <div className="font-medium">@O_Amor_Nunca_Envelhece</div>
                     <div className="text-sm text-white/70">Siga no Instagram</div>
                   </div>
                 </div>
