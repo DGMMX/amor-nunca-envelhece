@@ -1,178 +1,73 @@
-# Casa de Repouso - O Amor NUNCA Envelhece
+# Welcome to your Lovable project
 
-Landing page profissional para Casa de Repouso com foco em conversão via WhatsApp.
+## Project info
 
-## 🚀 Tecnologias
+**URL**: https://lovable.dev/projects/f12aabbd-2c6d-4998-b13f-76b6b4d98c19
 
-- ⚡️ [Vite](https://vitejs.dev/) - Build tool rápido
-- ⚛️ [React](https://react.dev/) - Biblioteca UI
-- 🔷 [TypeScript](https://www.typescriptlang.org/) - Segurança de tipos
-- 🎨 [Tailwind CSS](https://tailwindcss.com/) - Framework CSS
-- 🧩 [shadcn/ui](https://ui.shadcn.com/) - Componentes acessíveis
-- 📱 [Radix UI](https://www.radix-ui.com/) - Primitivas UI
-- 🎯 [React Router](https://reactrouter.com/) - Roteamento
-- 🔄 [React Query](https://tanstack.com/query) - Gerenciamento de dados
-- 🔐 [Supabase](https://supabase.com/) - Autenticação e banco de dados
-- 📊 [Google Analytics](https://analytics.google.com/) - Análise de dados
+## How can I edit this code?
 
-## 🛠️ Instalação
+There are several ways of editing your application.
 
-```bash
-# Clone o repositório
-git clone [url-do-repositorio]
+**Use Lovable**
 
-# Entre na pasta
-cd amor-nunca-envelhece
+Simply visit the [Lovable Project](https://lovable.dev/projects/f12aabbd-2c6d-4998-b13f-76b6b4d98c19) and start prompting.
 
-# Instale as dependências
-npm install
+Changes made via Lovable will be committed automatically to this repo.
 
-# Configure as variáveis de ambiente
-cp env.example .env
-# Edite o arquivo .env com suas configurações
+**Use your preferred IDE**
 
-# Execute em desenvolvimento
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-## 📋 Configuração
+**Edit a file directly in GitHub**
 
-### Variáveis de Ambiente
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-Crie um arquivo `.env` baseado no `env.example`:
+**Use GitHub Codespaces**
 
-```env
-# Supabase
-VITE_SUPABASE_URL=sua_url_do_supabase
-VITE_SUPABASE_ANON_KEY=sua_chave_anonima_do_supabase
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-# Google Analytics
-VITE_GA_TRACKING_ID=G-XXXXXXXXXX
-```
+## What technologies are used for this project?
 
-### Supabase
+This project is built with:
 
-1. Crie uma conta no [Supabase](https://supabase.com/)
-2. Crie um novo projeto
-3. Copie a URL e a chave anônima para o arquivo `.env`
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-### Google Analytics
+## How can I deploy this project?
 
-1. Crie uma conta no [Google Analytics](https://analytics.google.com/)
-2. Crie uma nova propriedade
-3. Copie o ID de rastreamento (G-XXXXXXXXXX) para o arquivo `.env`
+Simply open [Lovable](https://lovable.dev/projects/f12aabbd-2c6d-4998-b13f-76b6b4d98c19) and click on Share -> Publish.
 
-## 🚀 Deploy
+## Can I connect a custom domain to my Lovable project?
 
-### Opção 1: Netlify (Recomendado)
+Yes, you can!
 
-```bash
-# Instale o CLI do Netlify
-npm install -g netlify-cli
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-# Faça login
-netlify login
-
-# Deploy
-npm run build
-netlify deploy --prod --dir=dist
-```
-
-### Opção 2: Vercel
-
-```bash
-# Instale o CLI do Vercel
-npm install -g vercel
-
-# Deploy
-vercel --prod
-```
-
-### Opção 3: GitHub Pages
-
-```bash
-# Instale gh-pages
-npm install -g gh-pages
-
-# Deploy
-npm run build
-gh-pages -d dist
-```
-
-## 📊 Funcionalidades
-
-- ✅ Landing page responsiva
-- ✅ Integração com WhatsApp
-- ✅ Autenticação com Supabase
-- ✅ Google Analytics
-- ✅ SEO otimizado
-- ✅ Design moderno e acessível
-- ✅ Formulários de contato
-- ✅ Seções informativas
-- ✅ Botão flutuante de WhatsApp
-
-## 🎯 Conversão
-
-O site está otimizado para conversão com:
-
-- Botão WhatsApp fixo e flutuante
-- Call-to-actions estratégicos
-- Copywriting persuasivo
-- Design emocional
-- Formulários de captura de leads
-
-## 📱 Responsividade
-
-O site é totalmente responsivo e funciona perfeitamente em:
-
-- 📱 Smartphones
-- 📱 Tablets
-- 💻 Desktops
-- 💻 Laptops
-
-## 🔧 Desenvolvimento
-
-```bash
-# Desenvolvimento
-npm run dev
-
-# Build
-npm run build
-
-# Preview
-npm run preview
-
-# Lint
-npm run lint
-```
-
-## 📈 Status do Projeto
-
-### ✅ Fase 1 - Planejamento & Organização
-- [x] Tecnologia base escolhida (React + TypeScript + Tailwind)
-- [x] Identidade visual definida
-- [x] WhatsApp Business configurado
-
-### ✅ Fase 2 - Construção da Página
-- [x] Estrutura HTML completa
-- [x] CSS responsivo implementado
-- [x] Botão WhatsApp funcional
-- [x] Imagens e assets incluídos
-- [x] Copywriting persuasivo
-
-### ✅ Fase 3 - Lançamento Inicial
-- [x] Configuração para deploy
-- [x] Google Analytics integrado
-- [x] Testes de responsividade
-
-### 🔄 Fase 4 - Integrações Futuras
-- [x] Supabase integrado (autenticação)
-- [ ] Formulário de leads
-- [ ] API de pagamento
-- [ ] Sistema de CRM
-
-### 📋 Fase 5 - Otimização e Prova Social
-- [ ] Depoimentos reais
-- [ ] Fotos reais
-- [ ] FAQ
-- [ ] Campanha Instagram
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
