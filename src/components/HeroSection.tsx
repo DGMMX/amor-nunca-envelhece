@@ -24,7 +24,7 @@ const HeroSection = () => {
               <div className="flex items-center space-x-2 text-warm-orange">
                 <Heart className="w-6 h-6 fill-current" />
                 <span className="text-sm font-medium uppercase tracking-wide">
-                  Cuidado com Amor
+                  Cuidando com Amor
                 </span>
               </div>
               
