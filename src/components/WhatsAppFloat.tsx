@@ -25,7 +25,7 @@ const WhatsAppFloat = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const phone = "5511999999999"; // Replace with actual WhatsApp number
+    const phone = "5511962157712"; // Replace with actual WhatsApp number
     const message = "Olá! Gostaria de saber mais sobre a Casa de Repouso.";
     // trackWhatsAppClick();
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
