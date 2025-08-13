@@ -1,5 +1,5 @@
 import { Heart, MessageCircle, Instagram, Phone, MapPin } from "lucide-react";
-import logoImage from "@/assets/logo-casa-repouso.jpg";
+import logoImage from "@/assets/logo-casa-repouso.png";
 
 const Footer = () => {
   const handleWhatsAppClick = () => {

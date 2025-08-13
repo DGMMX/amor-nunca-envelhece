@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import logoImage from "@/assets/logo-casa-repouso.jpg";
+import logoImage from "@/assets/logo-casa-repouso.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
