@@ -44,13 +44,13 @@ const WhatsAppFloat = () => {
           >
             <X className="w-4 h-4" />
           </button>
-          <div className="pr-6">
-            <p className="text-sm font-semibold text-foreground mb-1">
-              💬 Olá! Como podemos ajudar?
-            </p>
-            <p className="text-xs text-muted-foreground">
-              Clique aqui para conversar conosco no WhatsApp
-            </p>
+            <div className="pr-6">
+              <p className="text-sm font-semibold text-foreground mb-1">
+                💬 Olá! Como podemos ajudar?
+              </p>
+              <p className="text-xs text-muted-foreground">
+                Clique aqui para conversar conosco no WhatsApp
+              </p>
           </div>
           {/* Arrow */}
           <div className="absolute bottom-[-8px] right-6 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white"></div>
