@@ -3,7 +3,7 @@ import logoImage from "@/assets/Logo_Oficial_O_Amor_Nunca_Envelhece.png";
 
 const Footer = () => {
   const handleWhatsAppClick = () => {
-    const phone = "5511962157712"; // Replace with actual WhatsApp number
+    const phone = "55112574-1874"; // Replace with actual WhatsApp number
     const message = "Olá! Vim através do site da Casa de Repouso.";
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
@@ -68,6 +68,7 @@ const Footer = () => {
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-warm-orange" />
                   <div>
+                    <div className="font-medium">(11) 2574-1874</div>
                     <div className="font-medium">(11) 962157712</div>
                     <div className="text-sm text-white/70">WhatsApp e telefone</div>
                   </div>

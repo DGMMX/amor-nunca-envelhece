@@ -16,7 +16,7 @@ const Header = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const phone = "5511962157712";
+    const phone = "55112574-1874";
     const message = "Olá! Gostaria de saber mais sobre a Casa de Repouso.";
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };

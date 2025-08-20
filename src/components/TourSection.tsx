@@ -4,7 +4,7 @@ import facilityImage from "@/assets/facility-interior.jpg";
 
 const TourSection = () => {
   const handleScheduleVisit = () => {
-    const phone = "5511962157712"; // Replace with actual WhatsApp number
+    const phone = "55112574-1874"; // Replace with actual WhatsApp number
     const message = "Olá! Gostaria de agendar uma visita à Casa de Repouso.";
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };

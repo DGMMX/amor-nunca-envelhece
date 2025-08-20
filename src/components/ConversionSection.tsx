@@ -4,7 +4,7 @@ import LeadForm from "./LeadForm";
 
 const ConversionSection = () => {
   const handleWhatsAppClick = () => {
-    const phone = "5511962157712"; // Replace with actual WhatsApp number
+    const phone = "55112574-1874"; // Replace with actual WhatsApp number
     const message = "Olá! Gostaria de saber mais sobre a Casa de Repouso e agendar uma visita.";
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
