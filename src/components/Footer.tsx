@@ -125,7 +125,7 @@ const Footer = () => {
               {/* Copyright */}
               <div className="text-center md:text-left">
                 <p className="text-white/70 text-sm">
-                  © 2025 Casa de Repouso. Todos os direitos reservados.
+                  © 2025 Casa de Repouso. Todos os direitos reservados. CNPJ: 061072470000155
                 </p>
                 <p className="text-white/50 text-xs mt-1">
                   Projeto idealizado com afeto e respeito.
