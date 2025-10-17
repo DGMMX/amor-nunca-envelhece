@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Heart, Phone } from "lucide-react";
 import heroImage from "@/assets/hero-elderly-care.jpg";
+import casaImagem from "@/assets/casa.jpeg"
 
 const HeroSection = () => {
   const handleWhatsAppClick = () => {
@@ -79,7 +80,7 @@ const HeroSection = () => {
           {/* Image */}
           <div className="relative">
             <img 
-              src={heroImage} 
+              src={casaImagem} 
               alt="Cuidado amoroso com idosos"
               className="w-full h-[600px] object-cover rounded-2xl shadow-warm"
             />
