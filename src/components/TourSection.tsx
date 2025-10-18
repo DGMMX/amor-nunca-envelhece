@@ -40,7 +40,7 @@ const TourSection = () => {
               {/* Coming Soon Badge */}
               <div className="absolute top-6 left-6 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full">
                 <span className="text-sm font-semibold text-deep-purple">
-                  🚧 Em preparação
+                  Inalguração 🎉
                 </span>
               </div>
             </div>
