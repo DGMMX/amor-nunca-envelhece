@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { MessageCircle, X } from "lucide-react";
 import { trackWhatsAppClick } from "@/lib/analytics";
-
+// teste
 const WhatsAppFloat = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
